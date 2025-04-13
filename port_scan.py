@@ -2,10 +2,11 @@
 
 from socket import *
 import time
-from threading import Thread, Lock
+from threading import Thread, Lock, Semaphore
 
 start_time = time.time()
 print_lock = Lock()
+semaphore = Semaphore(100) #Limit to 100 concurrent threads
 
 def scan_port(target, port):
     """Function to scan a single port"""
