@@ -6,6 +6,7 @@ This is a simple yet effective Python-based TCP port scanner that performs a ful
 ## Features
 - Scans all 65,535 TCP ports
 - Uses multithreading for faster scanning (up to 100 threads)
+- Semaphore to limit concurrency (default: 100 threads) 
 - Displays open ports in real-time
 - Handles timeouts gracefully
 - Lightweight and easy to use
